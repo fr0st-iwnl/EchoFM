@@ -8,4 +8,4 @@
 # What is this app for?
  * ECHO.FM Is a free music player with a variety of songs.
 
-![EchoFM App](https://cdn.discordapp.com/attachments/913504728778948719/1220734001640374422/Github.png?ex=66100422&is=65fd8f22&hm=177d2c1e217083f15bece6fccb8c6b9e0e5fd369a9e5c094b4c17228c51f5aa4&)
+![EchoFM App](https://cdn.discordapp.com/attachments/805554377745235974/1230514617436999751/Github.png?ex=6633990a&is=6621240a&hm=4a4b1a85d3f3a0e197267f632677529f35381b6758c99c4bba2a3abf2307777e&)
