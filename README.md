@@ -5,8 +5,6 @@
 <p align="justify">This website serves as an online portfolio to showcase my web presence.</p>
  <p>⭐ Star me on Github — it really helps me!</p>
 
----
-
 ### Features
 - 🎵 Listen to a collection of `20` songs
 - 🎧 User-friendly interface
