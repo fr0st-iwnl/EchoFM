@@ -158,20 +158,33 @@ document.getElementById('changeBackground').addEventListener('click', function()
 
 
 
+let currentVolume = 0.2; 
+
 function loadTrack(track_index) {
-  clearInterval(updateTimer);
-  resetValues();
-  curr_track.src = track_list[track_index].path;
-  curr_track.load();
+    clearInterval(updateTimer);
+    resetValues();
+    
+    curr_track.src = track_list[track_index].path;
+    curr_track.load(); // Load the track
+    track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+    track_name.textContent = track_list[track_index].name;
+    track_artist.textContent = track_list[track_index].artist; 
+    now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
 
-  track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
-  track_name.textContent = track_list[track_index].name;
-  track_artist.textContent = track_list[track_index].artist;
-  now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+    
+    curr_track.volume = currentVolume; 
+    volume_slider.value = currentVolume * 100; 
 
-  updateTimer = setInterval(seekUpdate, 1000);
-  curr_track.addEventListener("ended", nextTrack);
+    updateTimer = setInterval(seekUpdate, 1000);
+    curr_track.addEventListener("ended", nextTrack);
 }
+
+
+volume_slider.addEventListener("input", function() {
+    currentVolume = this.value / 100;
+    curr_track.volume = currentVolume; 
+});
+
 
 function resetValues() {
   curr_time.textContent = "00:00";

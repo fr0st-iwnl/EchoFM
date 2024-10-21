@@ -9,13 +9,52 @@
 body {
   font-family: 'vcr osd mono', monospace;
   background-image: url('output/images/russia1.png');
-  background-size: cover; /* Ensure the background covers the entire screen */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  transition: background-color 0.5s, background-image 0.5s; /* Add transition for smooth background change */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  height: 100vh; /* Ensure the body takes the full viewport height */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: background-color 0.5s, background-image 0.5s; 
+  margin: 0; 
+  padding: 0; 
+  height: 100vh; 
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-size: cover; 
+    background-position: center; 
+    height: 105vh;
+    font-size: 0.9rem; 
+  }
+
+  .player .track-art {
+    margin: 25px;
+    height: 190px;
+    width: 190px;
+    background-size: cover;
+    border-radius: 15%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center; 
+    height: 105vh;
+    font-size: 0.9rem; 
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 105vh;
+    background-size: cover; 
+    background-position: center; 
+    font-size: 0.8rem; 
+    padding: 10px; 
+  }
 }
 
 
@@ -42,7 +81,6 @@ body {
   margin: 25px;
   height: 250px;
   width: 250px;
-  background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
   border-radius: 15%;
 }
@@ -159,12 +197,6 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   color: #FFF; 
 }
 
-@media screen and (max-width: 768px) {
-  #changeBackground {
-    display: none;
-  }
-}
-
 #menu {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
@@ -175,7 +207,7 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 938px) {
   #menu {
     display: none;
   }
@@ -211,6 +243,7 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
     left: 20px;
   }
 }
+
 /* 1024PX PART */
 
 @media screen and (max-width: 1024px) {
